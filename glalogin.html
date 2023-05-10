@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GLAMS - GLA University</title><!-- META TAGS -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1">
+  <meta name="description" content="GLA University, Mathura">
+  <meta name="keyword" content="Education, GLA University, Clubs">
+  <!-- FAV ICON(BROWSER TAB ICON) -->
+  <link rel="shortcut icon" href="/Static/images/fav.ico" type=
+  "image/x-icon"><!-- GOOGLE FONT -->
+  <link rel="stylesheet" href="/Static/css/font.css">
+  <!-- FONTAWESOME ICONS -->
+  <link rel="stylesheet" href="/Static/css/font-awesome.min.css">
+  <!-- ALL CSS FILES -->
+  <link href="/Static/css/materialize.css" rel="stylesheet">
+  <link href="/Static/css/bootstrap.css" rel="stylesheet">
+  <link href="/Static/css/style.css" rel="stylesheet">
+  <!-- RESPONSIVE.CSS ONLY FOR MOBILE AND TABLET VIEWS -->
+  <link href="/Static/css/style-mob.css" rel="stylesheet">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="/Static/js/html5shiv.js"></script>
+    <script src="/Static/js/respond.min.js"></script>
+    <![endif]-->
+
+  <script src="/assets/scripts/DemoSec.js"></script>
+  <script src="/Scripts/angular.js"></script>
+  <script src="/Scripts/angular-sanitize.js"></script>
+  <script src="/Scripts/angular-route.js"></script>
+  <script src="/Scripts/ng-pattern-restrict.min.js"></script>
+  <script src=
+  "/assets/scripts/ui-bootstrap-tpls-0.10.0.js"></script>
+  <script src="/Scripts/MyAngularScript/MyApp.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <script async src=
+  "https://www.googletagmanager.com/gtag/js?id=G-C1BE720JQ4"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-C1BE720JQ4');
+  </script>
+  <style>
+        .toupper{
+            text-transform:uppercase;
+        }
+  </style>
+</head>
+<body ng-app="myApp">
+  <div id="MyLoader" style="display:none">
+    <div style=
+    "width: 100%; height: 100%; top: 0px; left: 0px; position: fixed; z-index: 1051; text-align: center; background:black; opacity:.8;">
+    </div>
+    <div style=
+    "border-radius:50%; position: fixed;top: 50%;left: 50%;width: 90px;height: 90px;padding-top: 23px;margin-left: -45px;margin-top: -45px; text-align:center;z-index:1052;">
+      <div class="wait-container">
+        <div class="dot dot-1"></div>
+        <div class="dot dot-2"></div>
+        <div class="dot dot-3"></div>
+      </div><svg version="1.1">
+      <defs>
+        <filter id="goo">
+          <fegaussianblur in="SourceGraphic" stddeviation="10"
+          result="blur"></fegaussianblur>
+          <fecolormatrix in="blur" mode="matrix" values=
+          "1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"></fecolormatrix>
+        </filter>
+      </defs></svg>
+    </div>
+  </div><!-- MOBILE MENU -->
+  <section>
+    <div class="ed-mob-menu">
+      <div class="ed-mob-menu-con">
+        <div class="ed-mm-left">
+          <div class="wed-logo">
+            <a href="/Main/Index"><img src=
+            "/Static/images/logo.png" alt=""></a>
+          </div>
+        </div>
+        <div class="ed-mm-right" id="mobmenu">
+          <div class="ed-mm-menu">
+            <a href="#!" class="ed-micon"></a>
+            <div class="ed-mm-inn">
+              <a href="#!" class="ed-mi-close"></a>
+              <ul>
+                <li>
+                  <a href="#!" data-toggle="modal" data-target=
+                  "#modal1">Log In</a>
+                </li>
+                <li>
+                  <a href="/Main/About">About Us</a>
+                </li>
+                <li>
+                  <a href="/Main/Course">All Courses</a>
+                </li>
+                <li>
+                  <a href="/Main/Admission">Admission</a>
+                </li>
+                <li>
+                  <a href="/Main/Department">Faculty Profile</a>
+                </li>
+                <li>
+                  <a href="/Main/Club">Student Clubs</a>
+                </li>
+                <li>
+                  <a href="/Main/Event?Mode=All">Events</a>
+                </li>
+                <li>
+                  <a href="http://glauniversity.in:8095/" target=
+                  "_blank">Alumni</a>
+                </li>
+                <li>
+                  <a href="/Main/Contact">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!--HEADER SECTION-->
+  <section>
+    <!-- TOP BAR -->
+    <div class="ed-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="ed-com-t1-left">
+              <ul>
+                <li>
+                  <a href="#">Contact: 17km Stone,
+                  NH-2,Mathura-Delhi Road, Mathura-281 406 (U.P.)
+                  INDIA</a>
+                </li>
+                <li>
+                  <a href="#">Phone: +91-5662-250900</a>
+                </li>
+              </ul>
+            </div>
+            <div class="ed-com-t1-right">
+              <ul>
+                <li>
+                  <a href="#!" data-toggle="modal" data-target=
+                  "#modal1">Log In</a>
+                </li>
+                <li class="hide">
+                  <a href="#!" data-toggle="modal" data-target=
+                  "#modal2">Sign Up</a>
+                </li>
+              </ul>
+            </div>
+            <div class="ed-com-t1-social">
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/glauniv"
+                  target="_NEW"></a>
+                </li>
+                <li>
+                  <a href=
+                  "https://in.linkedin.com/school/gla-university"
+                  target="_NEW"></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/gla_mathura" target=
+                  "_NEW"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- LOGO AND MENU SECTION -->
+    <div class="top-logo" data-spy="affix" data-offset-top="250">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="wed-logo">
+              <a href="/Main/Index"><img src=
+              "/Static/images/logo.png" alt=""></a>
+            </div>
+            <div class="main-menu" id="webmenu">
+              <ul>
+                <li>
+                  <a href="/Main/Index">Home</a>
+                </li>
+                <li class="about-menu">
+                  <a href="/Main/About" class="mm-arr">About us</a>
+                  <!-- MEGA MENU 1 -->
+                  <div class="mm-pos">
+                    <div class="about-mm m-menu">
+                      <div class="m-menu-inn">
+                        <div class="mm1-com mm1-s1">
+                          <div class="ed-course-in">
+                            <a class="course-overlay menu-about"
+                            href="/Main/About"><img src=
+                            "/Static/images/h-about.jpg" alt="">
+                            <span>About Us</span></a>
+                          </div>
+                        </div>
+                        <div class="mm1-com mm1-s2">
+                          <h4>Our <span style=
+                          "font-weight:bold;color:#f26838">Vision</span></h4>
+                          <p>We envision ourselves as a
+                          pace-setting university of Academic
+                          Excellence focused on education, research
+                          and development in established and
+                          emerging professions.</p><a href=
+                          "/Main/About" class="mm-r-m-btn">Read
+                          more</a>
+                        </div>
+                        <div class="mm1-com mm1-s2">
+                          <h4>Our <span style=
+                          "font-weight:bold;color:#f26838">Mission</span></h4>
+                          <p>To impart quality professional
+                          education, to conduct commendable
+                          research and to provide credible
+                          consultancy and extension services as per
+                          current and emerging socio-economic
+                          needs.</p><a href="/Main/About" class=
+                          "mm-r-m-btn">Read more</a>
+                        </div>
+                        <div class="mm1-com mm1-s4">
+                          <ul>
+                            <li>
+                              <a href="/Main/Course">All
+                              Courses</a>
+                            </li>
+                            <li>
+                              <a href=
+                              "/Main/Admission">Admission</a>
+                            </li>
+                            <li>
+                              <a href="/Main/Club">Student
+                              Clubs</a>
+                            </li>
+                            <li>
+                              <a href=
+                              "/Main/Event?Mode=All">Events</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="/Main/Course">All Courses</a>
+                </li>
+                <li>
+                  <a href="/Main/Department">Faculty Profile</a>
+                </li>
+                <li>
+                  <a href="/Main/Admission">Admission</a>
+                </li>
+                <li>
+                  <a href="/Main/Club">Student Clubs</a>
+                </li>
+                <li>
+                  <a href="/Main/Event?Mode=All">Events</a>
+                </li>
+                <li>
+                  <a href="http://glauniversity.in:8095/" target=
+                  "_blank">Alumni</a>
+                </li>
+                <li>
+                  <a href="/Main/Contact">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="all-drop-down-menu"></div>
+        </div>
+      </div>
+    </div>
+  </section><!--END HEADER SECTION-->
+  <link href="/Static/css/slider/skin.css" rel="stylesheet">
+  <div ng-controller="Main_SetupHome" ng-cloak="">
+    <!-- SLIDER -->
+    <section>
+      <div class="h2-hero">
+        <div class="container">
+          <div class="row">
+            <div class="h2-hero-inn">
+              <div class="h2-hero-left">
+                <div class="ed-ban-tit">
+                  <div class="ed-ban-tit-1">
+                    <h1>Welcome to GLA University <span>Feel The
+                    Difference With Us</span></h1>
+                  </div>
+                  <div class="ed-ban-tit-2">
+                    <h4>India's Leading Private University</h4>
+                  </div>
+                  <div class="ed-ban-tit-3">
+                    <div class="ed-ban-tit-3-com ed-ban-tit-31">
+                      <div class="ed-sprit ed-ban-cal-le">
+                        <span>{{Student.split('|')[0]}}</span><span>{{Student.split('|')[1]}}</span>
+                      </div>
+                      <div class="ed-ban-cal-ri">
+                        <a href=
+                        "#"><span>{{Student.split('|')[2]}}</span></a><span>{{Student.split('|')[3]}}</span>
+                      </div>
+                    </div>
+                    <div class="ed-ban-tit-3-com ed-ban-tit-32">
+                      <div class="ed-sprit ed-ban-cal-le">
+                        <span>{{Hostel.split('|')[0]}}</span><span>{{Hostel.split('|')[1]}}</span>
+                      </div>
+                      <div class="ed-ban-cal-ri">
+                        <a href=
+                        "#"><span>{{Hostel.split('|')[2]}}</span></a><span>{{Hostel.split('|')[3]}}</span>
+                      </div>
+                    </div>
+                    <div class="ed-ban-tit-3-com ed-ban-tit-31">
+                      <div class="ed-sprit ed-ban-cal-le">
+                        <span>{{Course.split('|')[0]}}</span><span>{{Course.split('|')[1]}}</span>
+                      </div>
+                      <div class="ed-ban-cal-ri">
+                        <a href=
+                        "/Main/Course"><span>{{Course.split('|')[2]}}</span></a><span>{{Course.split('|')[3]}}</span>
+                      </div>
+                    </div>
+                    <div class="ed-ban-tit-3-com ed-ban-tit-32">
+                      <div class="ed-sprit ed-ban-cal-le">
+                        <span>{{Club.split('|')[0]}}</span><span>{{Club.split('|')[1]}}</span>
+                      </div>
+                      <div class="ed-ban-cal-ri">
+                        <a href=
+                        "/Main/Club"><span>{{Club.split('|')[2]}}</span></a><span>{{Club.split('|')[3]}}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="h2-hero-right" ng-show="AllowSignUp!=''">
+                <div class="ed-ref-form">
+                  <div class="ed-ref-form-inn">
+                    <div class="map-head">
+                      <p>Existing Students</p>
+                    </div>
+                    <form autocomplete="off">
+                      <ul>
+                        <li><input type="button" class="text-white"
+                        href="#!" data-toggle="modal" data-target=
+                        "#modal1" value="Click To Login"></li>
+                      </ul>
+                    </form>
+                    <div class="map-head hide">
+                      <p>Apply for New Admission {{AdmSes}}</p>
+                    </div>
+                    <form class="hide" autocomplete="off">
+                      <ul>
+                        <li><input type="button" class="text-white"
+                        onclick="window.location='/Main/Admission'"
+                        value="Click To Apply"></li>
+                      </ul>
+                    </form>
+                    <div class="map-head hide">
+                      <p>Register for the</p>
+                      <h2>Admissions</h2><span class=
+                      "footer-ser-re">fill below details</span>
+                    </div>
+                    <form autocomplete="off" class="hide">
+                      <ul>
+                        <li><input type="text" id="ForName"
+                        maxlength="50" class="alphaonly" required=
+                        ""> <span class=
+                        "floating-label">Name</span></li>
+                        <li><input type="text" id="ForFName"
+                        maxlength="50" class="alphaonly" required=
+                        ""> <span class="floating-label">Father's
+                        Name</span></li>
+                        <li><input type="text" id="ForPhone"
+                        maxlength="10" class="numberonly" required=
+                        ""> <span class="floating-label">Phone
+                        number</span></li>
+                        <li><input type="date" id="dob" required=
+                        ""></li>
+                        <li><input type="button" class="text-white"
+                        ng-click="ValidateSubmit()" value=
+                        "Proceed Now"></li>
+                      </ul>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- QUICK LINKS -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="wed-hom-ser">
+            <ul>
+              <li>
+                <a href="/Main/Course" class=
+                "waves-effect waves-light btn-large wed-pop-ser-btn">
+                <img src="/Static/images/icon/h-ic4.png" alt="">
+                Courses</a>
+              </li>
+              <li>
+                <a href="/Main/Admission" class=
+                "waves-effect waves-light btn-large wed-pop-ser-btn">
+                <img src="/Static/images/icon/h-ic2.png" alt="">
+                Admission</a>
+              </li>
+              <li>
+                <a href="/Main/Placement" class=
+                "waves-effect waves-light btn-large wed-pop-ser-btn">
+                <img src="/Static/images/icon/h-ic1.png" alt="">
+                Placement</a>
+              </li>
+              <li>
+                <a href="/Main/Event" class=
+                "waves-effect waves-light btn-large wed-pop-ser-btn">
+                <img src="/Static/images/icon/h-ic3.png" alt="">
+                Events</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section><!-- POPULAR COURSES -->
+    <section class="pop-cour">
+      <div class="container com-sp pad-bot-50">
+        <div class="row">
+          <div class="con-title">
+            <h2>Popular <span>Student</span> Clubs</h2>
+            <p>There are several clubs that students can be a
+            member of, take membership of in order to be part of
+            the cultural landscape of the University.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6" ng-repeat="C in Clubs">
+            <div>
+              <div class="home-top-cour">
+                <!--POPULAR COURSES IMAGE-->
+                <div class="col-md-3"><img src=
+                "/Static/images/h-cam1.jpg" ng-src=
+                "{{(C.Logo!=''?C.Logo:'/Static/images/h-cam1.jpg')}}"
+                onerror=
+                "this.onerror = null; this.src = '/Static/images/h-cam1.jpg';"
+                alt="Club Logo"></div>
+                <!--POPULAR COURSES: CONTENT-->
+                <div class="col-md-9 home-top-cour-desc">
+                  <a href="/Main/ClubDetails?Key={{C.Key}}">
+                  <h3>{{C.Name}}</h3></a>
+                  <h4>{{C.Tag}}</h4>
+                  <p ng-bind-html="C.Description"></p><span class=
+                  "home-top-cour-rat">{{C.Rating}}</span>
+                  <div class="hom-list-share">
+                    <ul>
+                      <li>
+                        <a href=
+                        "/Main/ClubDetails?Key={{C.Key}}">More
+                        Details</a>
+                      </li>
+                      <li>
+                        <a href=
+                        "/Main/ClubDetails?Key={{C.Key}}">{{C.Event}}
+                        Upcoming</a>
+                      </li>
+                      <li>
+                        <a href=
+                        "/Main/ClubDetails?Key={{C.Key}}">{{C.Event}}
+                        Events</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col s5"></div>
+          <div class="input-field col-sm-2">
+            <i class=
+            "waves-effect waves-light light-btn waves-input-wrapper my-btn-viewall"
+            style="" href="/Main/Club"><a href="/Main/Club">View
+            All</a></i>
+          </div>
+          <div class="col s5"></div>
+        </div>
+      </div>
+    </section><!-- UPCOMING EVENTS -->
+    <section>
+      <div class="container com-sp pad-bot-0">
+        <div class="row">
+          <div class="col-md-4">
+            <!--<div class="ho-ex-title">
+                        <h4>Upcoming Event</h4>
+                    </div>-->
+            <div class="ho-ev-latest ho-ev-latest-bg-1">
+              <div class="ho-lat-ev">
+                <h4>Upcoming Activities</h4>
+                <p>Find and register for upcoming activities in GLA
+                University. <a class=
+                "label label-warning label-sm text-white" href=
+                "/Main/Event?Mode=University">View All</a></p>
+              </div>
+            </div>
+            <div class="ho-event ho-event-mob-bot-sp">
+              <ul style="max-height:460px; overflow:hidden;">
+                <li ng-repeat="E in Events_Other">
+                  <div class="ho-ev-date">
+                    <span>{{E.EveFromM.split('.')[0]}}</span><span>{{E.EveFromM.split('.')[1]}},
+                    {{E.EveFromM.split('.')[2]}}</span>
+                  </div>
+                  <div class="ho-ev-link">
+                    <a href=
+                    "/Main/EventDetails?Key={{E.Key}}"><sup class=
+                    "label label-success label-sm text-white pull-right"
+                    style="line-height:15px;" ng-class=
+                    "{'label-success':E.EveStatus=='U','label-warning':E.EveStatus=='C','label-info':E.EveStatus=='O'}">
+                    {{(E.EveStatus=='U'?'Upcoming':(E.EveStatus=='O'?'Active':'Closed'))}}</sup>
+                    <h4>{{E.EventName}}</h4></a>
+                    <p>{{E.Description}}</p><span>On :
+                    {{E.EveFrom}}-{{E.EveTill}}</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <!--<div class="ho-ex-title">
+                        <h4>Upcoming Event</h4>
+                    </div>-->
+            <div class="ho-ev-latest ho-ev-latest-bg-2">
+              <div class="ho-lat-ev">
+                <h4>Placement Activity</h4>
+                <p>Find all information related to upcoming
+                placement related activities.</p>
+              </div>
+            </div>
+            <div class="ho-event ho-event-mob-bot-sp">
+              <ul style="max-height:460px; overflow:hidden;"></ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <!--<div class="ho-ex-title">
+                            <h4>Upcoming Event</h4>
+                        </div>-->
+            <div class="ho-ev-latest ho-ev-latest-bg-1">
+              <div class="ho-lat-ev">
+                <h4>Upcoming Club Events</h4>
+                <p>Find and register for upcoming club events in
+                GLA University. <a class=
+                "label label-warning label-sm text-white" href=
+                "/Main/Event?Mode=Club">View All</a></p>
+              </div>
+            </div>
+            <div class="ho-event ho-event-mob-bot-sp">
+              <ul style="max-height:460px; overflow:hidden;">
+                <li ng-repeat="E in Events">
+                  <div class="ho-ev-date">
+                    <span>{{E.EveFromM.split('.')[0]}}</span><span>{{E.EveFromM.split('.')[1]}},
+                    {{E.EveFromM.split('.')[2]}}</span>
+                  </div>
+                  <div class="ho-ev-link">
+                    <a href=
+                    "/Main/EventDetails?Key={{E.Key}}"><sup class=
+                    "label label-success label-sm text-white pull-right"
+                    style="line-height:15px;" ng-class=
+                    "{'label-success':E.EveStatus=='U','label-warning':E.EveStatus=='C','label-info':E.EveStatus=='O'}">
+                    {{(E.EveStatus=='U'?'Upcoming':(E.EveStatus=='O'?'Active':'Closed'))}}</sup>
+                    <h4>{{E.EventName}}</h4></a>
+                    <p>{{E.Description}}</p><span>On :
+                    {{E.EveFrom}}-{{E.EveTill}}</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 hide">
+            <div class="ho-ev-latest ho-ev-latest-bg-3">
+              <div class="ho-lat-ev">
+                <h4>Register & Login</h4>
+                <p>Student area velit convallis venenatis lacus
+                quis, efficitur lectus.</p>
+              </div>
+            </div>
+            <div class="ho-st-login">
+              <ul class="tabs tabs-hom-reg">
+                <li class="tab col s6">
+                  <a href="#hom-vijay">Register</a>
+                </li>
+                <li class="tab col s6">
+                  <a href="#hom_log">Login</a>
+                </li>
+              </ul>
+              <div id="hom-vijay" class="col s12">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input type="text" class="validate">
+                      <label>User name</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input type="text" class="validate">
+                      <label>Email id</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input type="password" class="validate">
+                      <label>Password</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input type="password" class="validate">
+                      <label>Confirm password</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input type="submit" value="Register" class=
+                      "waves-effect waves-light light-btn">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div id="hom_log" class="col s12">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input type="text" class="validate">
+                      <label>Student user name</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input type="text" class="validate">
+                      <label>Password</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input type="submit" value="Login" class=
+                      "waves-effect waves-light light-btn">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- NEWS AND EVENTS -->
+    <section>
+      <div class="container com-sp">
+        <div class="row">
+          <div class="con-title">
+            <h2>Exam, Academics <span>and</span> Updates</h2>
+            <p>Latest updates related to various activities of
+            examination / academics / research.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="bot-gal h-blog ho-event">
+              <h4>Examination Updates</h4>
+              <div class="ho-event news">
+                <ul>
+                  <li ng-repeat="E in Events_Exam">
+                    <div class="ho-ev-date">
+                      <span>{{E.EveFromM.split('.')[0]}}</span><span>{{E.EveFromM.split('.')[1]}},
+                      {{E.EveFromM.split('.')[2]}}</span>
+                    </div>
+                    <div class="ho-ev-link">
+                      <a href=
+                      "/Main/EventDetails?Key={{E.Key}}"><sup class="label label-success label-sm text-white pull-right"
+                      style="line-height:15px;" ng-class=
+                      "{'label-success':E.EveStatus=='U','label-warning':E.EveStatus=='C','label-info':E.EveStatus=='O'}">
+                      {{(E.EveStatus=='U'?'Upcoming':(E.EveStatus=='O'?'Active':'Closed'))}}</sup>
+                      <h4>{{E.EventName}}</h4></a>
+                      <p>{{E.Description}}</p><span>Schedule :
+                      {{E.EveFrom}}-{{E.EveTill}}</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bot-gal h-gal ho-event-mob-bot-sp">
+              <h4>Photo Gallery</h4>
+              <ul class="hide">
+                <li><img class="materialboxed" data-caption=
+                "Education master image captions" src=
+                "/Static/images/ami/8.jpg" alt=""></li>
+                <li><img class="materialboxed" data-caption=
+                "Education master image captions" src=
+                "/Static/images/ami/9.jpg" alt=""></li>
+                <li><img class="materialboxed" data-caption=
+                "Education master image captions" src=
+                "/Static/images/ami/10.jpg" alt=""></li>
+                <li><img class="materialboxed" data-caption=
+                "Education master image captions" src=
+                "/Static/images/ami/11.jpg" alt=""></li>
+                <li><img class="materialboxed" data-caption=
+                "Education master image captions" src=
+                "/Static/images/ami/1.jpg" alt=""></li>
+                <li><img class="materialboxed" data-caption=
+                "Education master image captions" src=
+                "/Static/images/ami/2.jpg" alt=""></li>
+                <li><img class="materialboxed" data-caption=
+                "Education master image captions" src=
+                "/Static/images/ami/3.jpg" alt=""></li>
+                <li><img class="materialboxed" data-caption=
+                "Education master image captions" src=
+                "/Static/images/ami/4.jpg" alt=""></li>
+                <li><img class="materialboxed" data-caption=
+                "Education master image captions" src=
+                "/Static/images/ami/5.jpg" alt=""></li>
+                <li><img class="materialboxed" data-caption=
+                "Education master image captions" src=
+                "/Static/images/ami/6.jpg" alt=""></li>
+                <li><img class="materialboxed" data-caption=
+                "Education master image captions" src=
+                "/Static/images/ami/7.jpg" alt=""></li>
+                <li><img class="materialboxed" data-caption=
+                "Education master image captions" src=
+                "/Static/images/ami/8.jpg" alt=""></li>
+              </ul>
+              <div class="alert alert-info alert-dismissible" role=
+              "alert">
+                <strong>Gallery</strong> would be coming soon.
+                <button type="button" class="close" data-dismiss=
+                "alert" aria-label="Close"><span aria-hidden=
+                "true">×</span></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="bot-gal h-blog ho-event">
+              <h4>Research Updates</h4>
+              <div class="alert alert-info alert-dismissible" role=
+              "alert">
+                <strong>Research</strong> updates would be coming
+                soon. <button type="button" class="close"
+                data-dismiss="alert" aria-label=
+                "Close"><span aria-hidden="true">×</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- FOOTER COURSE BOOKING -->
+    <section>
+      <div class="full-bot-book">
+        <div class="container">
+          <div class="row">
+            <div class="bot-book">
+              <div class="col-md-2 bb-img"><img src=
+              "/Static/images/3.png" alt=""></div>
+              <div class="col-md-7 bb-text">
+                <h4>University Courses Offered</h4>
+                <p>Find the list of various program running in GLA
+                University.</p>
+              </div>
+              <div class="col-md-3 bb-link">
+                <a href="/Main/Course">View Courses</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+    app.controller("Main_SetupHome", function ($scope, myService) {
+
+        $scope.AdmSes = "";
+        $scope.AllowSignUp = "";
+
+
+        $scope.MinAge = function (yr) {
+            var today = new Date();
+            var dd = today.getDate();
+            var mm = today.getMonth() + 1;
+            var yyyy = today.getFullYear() - yr;
+            if (dd < 10) {
+                dd = '0' + dd
+            }
+            if (mm < 10) {
+                mm = '0' + mm
+            }
+            today = yyyy + '-' + mm + '-' + dd;
+            return today;
+        }
+
+        $scope.Setup = function () {
+            $("#MyLoader").show();
+            var User = '';
+            var Path = "/Main/SetupHome";
+            var getData = myService.UserLogin(User, Path);
+            getData.then(function (d) {
+                if (d.data.RStatus.toString() != "" && d.data.RStatus.toString() != "Error") {
+                    $scope.Clubs = d.data.Clubs;
+                    $scope.Events = d.data.Events;
+                    $scope.Companies = d.data.Companies;
+
+                    $scope.Events_Other = d.data.Events_Other;
+
+                    $scope.Student = d.data.Student;
+                    $scope.Hostel = d.data.Hostel;
+                    $scope.Club = d.data.Club;
+                    $scope.Course = d.data.Course;
+
+                    $scope.AdmSes = d.data.AdmSes;
+                    $scope.AllowSignUp = d.data.AllowSignUp;
+                    if ($scope.AllowSignUp == 'Yes')
+                        document.getElementById("dob").setAttribute("max", $scope.MinAge(13));
+
+                    $scope.Events_Exam = d.data.Events_Exam;
+                }
+                else {
+                    alert(d.data.RMsg);
+                }
+                $("#MyLoader").hide();
+            });
+        }
+        $scope.Setup();
+        $scope.HideWait = function () {
+            $("#MyLoader").hide();
+        }
+
+        $scope.ValidateSubmit = function () {
+
+            if ($("#ForName").val().trim().length < 2) {
+                CallSwal('Oops..', 'error', 'Please Enter Your Name As Per 10th Marksheet', 'ForName', ''); return false;
+            }
+
+            if ($("#ForFName").val().trim().length < 2) {
+                CallSwal('Oops..', 'error', 'Please Enter Your Father`s Name As Per 10th Marksheet', 'ForFName', ''); return false;
+            }
+
+            if (document.getElementById("ForPhone").value.toString().trim().length < 10) {
+                CallSwal('Oops..', 'error', 'Please Enter Valid Mobile No.', 'ForPhone', ''); return false;
+            }
+
+            if (document.getElementById("dob").value.toString().trim() == "") {
+                CallSwal('Oops..', 'error', 'Please Enter Your Date of Birth As Per 10th Marksheet', 'dob', ''); return false;
+            }
+            else {
+                if ((new Date($("#dob").val())) > (new Date($scope.MinAge(13)))) {
+                    CallSwal('Oops..', 'error', 'Please Enter Valid Date of Birth As Per 10th Marksheet From Calender', 'dob', ''); return false;
+                }
+            }
+
+            localStorage.setItem("V_ForName", $("#ForName").val().trim());
+            localStorage.setItem("V_ForFName", $("#ForFName").val().trim());
+            localStorage.setItem("V_ForPhone", $("#ForPhone").val().trim());
+            localStorage.setItem("V_dob", formatDate(new Date($("#dob").val())));
+
+            window.location = '/Main/Admission';
+        }
+    });
+  </script> 
+  <script src="/Scripts/MyAngularScript/MyService.js"></script>
+  <style>
+
+    .h2-hero {
+        background: url(/Static/images/ban-bg.png) center bottom repeat-x, url(/Static/banner-bg.jpg) repeat-x center;
+    }
+
+    @media (max-width: 400px) {
+        .h2-hero {
+            background: url(/Static/images/ban-bg.png) center bottom repeat-x, url(/Static/banner-bg.jpg);
+        }
+    }
+  </style><!-- FOOTER -->
+  <section class="wed-hom-footer">
+    <div class="container">
+      <div class="row wed-foot-link-1">
+        <div class="col-md-4 foot-tc-mar-t-o">
+          <h4>Get In Touch</h4>
+          <p>Address: 17km Stone, NH-2,Mathura-Delhi Road,
+          Mathura-281 406 (U.P.) INDIA</p>
+          <p>Phone: <a href="#!">+91-5662-250900</a></p>
+          <p>Email: <a href=
+          "#!">glausoftwaresupport@gla.ac.in</a></p>
+        </div>
+        <div class="col-md-4">
+          <h4>DOWNLOAD OUR FREE MOBILE APPS</h4>
+          <ul>
+            <li>
+              <a href=
+              "https://play.google.com/store/apps/details?id=glau.com&amp;hl=en_IN&amp;gl=US"
+              target="_New"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>SOCIAL MEDIA</h4>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/glauniv" target=
+              "_NEW"></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/gla_mathura" target=
+              "_NEW"></a>
+            </li>
+            <li>
+              <a href=
+              "https://in.linkedin.com/school/gla-university"
+              target="_NEW"></a>
+            </li>
+            <li>
+              <a href=
+              "https://www.youtube.com/channel/UCzv9lLHktV5HGuDHKvS_zyg"
+              target="_NEW"></a>
+            </li>
+            <li>
+              <a href=
+              "https://api.whatsapp.com/send?phone=916399020003"
+              target="_NEW"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section><!--SECTION LOGIN, REGISTER AND FORGOT PASSWORD-->
+  <section ng-controller="login_controller">
+    <!-- LOGIN SECTION -->
+    <div id="modal1" class="modal fade" role="dialog">
+      <div class="log-in-pop">
+        <div class="log-in-pop-left hideonmobile">
+          <h1>Hello...</h1>
+          <p>Don't have an account? Create your account. It's take
+          less than a minutes</p>
+          <h4>Login with social media (soon)</h4>
+          <ul>
+            <li>
+              <a href="#">Facebook</a>
+            </li>
+            <li>
+              <a href="#">LinkedIn</a>
+            </li>
+            <li>
+              <a href="#">Twitter</a>
+            </li>
+          </ul>
+        </div>
+        <div class="log-in-pop-right">
+          <a href="#" class="pop-close" data-dismiss=
+          "modal"><img src="/Static/images/cancel.png" alt=""></a>
+          <h4>Login</h4>
+          <form class="s12">
+            <div>
+              <div class="input-field s12">
+                <input type="text" id="username" name="username"
+                autocomplete="off" data-ng-model="name" ng-keydown=
+                "$event.keyCode === 13 &amp;&amp; ValidateLogin()"
+                placeholder="Roll No / Registration No." maxlength=
+                "20" class="validate alphaonlyusername">
+              </div>
+            </div>
+            <div>
+              <div class="input-field s12">
+                <input type="password" id="userpass" name=
+                "userpass" autocomplete="off" placeholder=
+                "Password" ng-keydown=
+                "$event.keyCode === 13 &amp;&amp; ValidateLogin()"
+                class="validate">
+              </div>
+            </div>
+            <div>
+              <div class="col-sm-9 no-padding">
+                <div class="input-field" style=
+                "position: unset !important;">
+                  <input type="text" id="LCaptcha" class=
+                  "form-control alphanumberonly" ng-keydown=
+                  "$event.keyCode === 13 &amp;&amp; ValidateLogin()"
+                  placeholder="Enter Captcha" pattern=
+                  "[A-Za-z0-9]{4}" maxlength="4" autocomplete="off"
+                  required="">
+                </div>
+              </div>
+              <div class="col-sm-3" style="padding-right: 0px;">
+                <div class=
+                "input-field s12 form-control for-captcha"><img id=
+                "LImgCaptcha" src=
+                "/Login/CreateCaptchaImage?Mode=L&amp;New=1" title=
+                "Captcha" style="height: 31px;"></div>
+              </div>
+            </div>
+            <div>
+              <div class="s12 log-ch-bx hide">
+                <p><input type="checkbox" id="test5"> <label for=
+                "test5">Remember me</label></p>
+              </div>
+            </div>
+            <div style="float: right;">
+              <div class="input-field s4">
+                <a class=
+                "waves-effect waves-light log-in-btn text-white"
+                ng-click="ValidateLogin()" style=
+                "padding: 10px 20px; border-radius:4px;">Login</a>
+              </div>
+            </div>
+            <div style="display:inline-block">
+              <div>
+                <a href="#" data-dismiss="modal" data-toggle=
+                "modal" data-target="#modal3">Forgot password</a>
+                <a href="#" class="hide" data-dismiss="modal"
+                data-toggle="modal" data-target="#modal2">| Create
+                a new account</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div><!-- REGISTER SECTION -->
+    <div id="modal2" class="modal fade" role="dialog">
+      <div class="log-in-pop">
+        <div class="log-in-pop-left">
+          <h1>Hello...</h1>
+          <p>Don't have an account? Create your account. It's take
+          less than a minutes</p>
+          <h4>Login with social media</h4>
+          <ul>
+            <li>
+              <a href="#">Facebook</a>
+            </li>
+            <li>
+              <a href="#">Google+</a>
+            </li>
+            <li>
+              <a href="#">Twitter</a>
+            </li>
+          </ul>
+        </div>
+        <div class="log-in-pop-right">
+          <a href="#" class="pop-close" data-dismiss=
+          "modal"><img src="/Static/images/cancel.png" alt=""></a>
+          <h4>Create an Account</h4>
+          <p>Don't have an account? Create your account. It's take
+          less than a minutes</p>
+          <form class="s12">
+            <div>
+              <div class="input-field s12">
+                <input type="text" data-ng-model="name1" class=
+                "validate"> <label>User name</label>
+              </div>
+            </div>
+            <div>
+              <div class="input-field s12">
+                <input type="email" class="validate"> <label>Email
+                id</label>
+              </div>
+            </div>
+            <div>
+              <div class="input-field s12">
+                <input type="password" class="validate">
+                <label>Password</label>
+              </div>
+            </div>
+            <div>
+              <div class="input-field s12">
+                <input type="password" class="validate">
+                <label>Confirm password</label>
+              </div>
+            </div>
+            <div>
+              <div class="input-field s4">
+                <input type="submit" value="Register" class=
+                "waves-effect waves-light log-in-btn">
+              </div>
+            </div>
+            <div>
+              <div class="input-field s12">
+                <a href="#" data-dismiss="modal" data-toggle=
+                "modal" data-target="#modal1">Are you a already
+                member ? Login</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div><!-- FORGOT SECTION -->
+    <div id="modal3" class="modal fade" role="dialog">
+      <div class="log-in-pop">
+        <div class="log-in-pop-left hideonmobile">
+          <h1>Hello...</h1>
+          <p>Don't have an account? Create your account. It's take
+          less than a minutes</p>
+          <h4>Login with social media (soon)</h4>
+          <ul>
+            <li>
+              <a href="#">Facebook</a>
+            </li>
+            <li>
+              <a href="#">Google+</a>
+            </li>
+            <li>
+              <a href="#">Twitter</a>
+            </li>
+          </ul>
+        </div>
+        <div class="log-in-pop-right">
+          <a href="#" class="pop-close" data-dismiss=
+          "modal"><img src="/Static/images/cancel.png" alt=""></a>
+          <h4>Forgot password</h4>
+          <form class="s12">
+            <div>
+              <div class="input-field s12">
+                <input type="text" id="username_f" name=
+                "username_f" autocomplete="off" data-ng-model=
+                "username_f" ng-keydown=
+                "$event.keyCode === 13 &amp;&amp; ValidateRecovery()"
+                placeholder="Roll No / Registration No." maxlength=
+                "20" class="validate alphaonlyusername">
+              </div>
+            </div>
+            <div>
+              <div class="input-field s12">
+                <input type="text" id="userpass_f" name=
+                "userpass_f" autocomplete="off" data-ng-model=
+                "userpass_f" ng-keydown=
+                "$event.keyCode === 13 &amp;&amp; ValidateRecovery()"
+                placeholder="Registered Email ID" maxlength="100"
+                class="validate emailname">
+              </div>
+            </div>
+            <div>
+              <div class="col-sm-9 no-padding">
+                <div class="input-field" style=
+                "position: unset !important;">
+                  <input type="text" id="FCaptcha" class=
+                  "form-control alphanumberonly" ng-keydown=
+                  "$event.keyCode === 13 &amp;&amp; ValidateRecovery()"
+                  placeholder="Enter Captcha" pattern=
+                  "[A-Za-z0-9]{4}" maxlength="4" autocomplete="off"
+                  required="">
+                </div>
+              </div>
+              <div class="col-sm-3" style="padding-right: 0px;">
+                <div class=
+                "input-field s12 form-control for-captcha"><img id=
+                "FImgCaptcha" src=
+                "/Login/CreateCaptchaImage?Mode=F&amp;New=1" title=
+                "Captcha" style="height: 31px;"></div>
+              </div>
+            </div>
+            <div style="float: right;">
+              <div class="input-field s4">
+                <a class=
+                "waves-effect waves-light log-in-btn text-white"
+                ng-click="ValidateRecovery()" style=
+                "padding: 10px 20px; border-radius:4px;">Recover
+                Credentials</a>
+              </div>
+            </div>
+            <div>
+              <div>
+                <a href="#" data-dismiss="modal" data-toggle=
+                "modal" id="trantologin" data-target="#modal1">Are
+                you a already member ? Login</a> <a href="#" class=
+                "hide" data-dismiss="modal" data-toggle="modal"
+                data-target="#modal2">| Create a new account</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section><!-- SOCIAL MEDIA SHARE -->
+  <section>
+    <div class="icon-float">
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/glauniv" target="_NEW"
+          class="fb1"></a>
+        </li>
+        <li>
+          <a href=
+          "https://www.youtube.com/channel/UCzv9lLHktV5HGuDHKvS_zyg"
+          target="_NEW" class="gp1"></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/gla_mathura" target="_NEW"
+          class="tw1"></a>
+        </li>
+        <li>
+          <a href="https://in.linkedin.com/school/gla-university"
+          target="_NEW" class="li1"></a>
+        </li>
+        <li>
+          <a href=
+          "https://api.whatsapp.com/send?phone=916399020003"
+          target="_NEW" class="wa1"></a>
+        </li>
+        <li>
+          <a href="mailto:glauniversity@gla.ac.in" class="sh1"></a>
+        </li>
+      </ul>
+    </div>
+  </section><!--Import jQuery before materialize.js-->
+  <script src="/Static/js/main.min.js"></script> 
+  <script src="/Static/js/bootstrap.min.js"></script> 
+  <script src="/Static/js/materialize.min.js"></script> 
+  <script src="/Static/js/custom.js"></script> 
+  <script src="/Scripts/swalalert.js"></script> 
+  <script>
+
+
+        //app.controller("master_courses", function ($scope, myService) {
+        //    $scope.MasterCourses = [];
+        //    $scope.Setup = function () {
+        //        var User = '';
+        //        var Path = "/Main/SetupCourse";
+        //        var getData = myService.UserLogin(User, Path);
+        //        getData.then(function (d) {
+        //            if (d.data.RStatus.toString() != "" && d.data.RStatus.toString() != "Error") {
+        //                $scope.MasterCourses = d.data.Courses;
+        //            }
+        //            else {
+        //            }
+        //        });
+        //    }
+        //    $scope.Setup();
+        //    $scope.SetCourse = function (c) {
+        //        if ($scope.MasterCourses.length > 0) {
+        //            if ($scope.MasterCourses.filter(p => p.CCode == c).length > 0) {
+        //                var F = $scope.MasterCourses.filter(p => p.CCode == c)[0];
+        //                $("#sf-box").val(F.Course + (F.Branch != "" ? " / " + F.Branch : ""));
+        //            }
+        //        }
+        //    }
+        //    $scope.SearchCourse = function () {
+        //        if ($("#sf-box").val().trim().length > 0) {
+        //            window.location = "/Main/Course?Key=" + encodeURI($("#sf-box").val())
+        //        }
+        //    }
+        //});
+
+
+        app.controller("login_controller", function ($scope, myService){
+            $scope.ValidateLogin = function () {
+                var Mode = "Regular Student";
+                if ($("#username").val().trim().length < 9) {
+                    CallSwal('Oops..', 'error', 'Please Enter Your Roll No / Registration No.', 'username',''); return false;
+                }
+                if ($("#userpass").val().trim().length <= 0) {
+                    CallSwal('Oops..', 'error', 'Please Enter Your Password', 'userpass', ''); return false;
+                }
+                if ($("#LCaptcha").val().length < 4) {
+                    CallSwal('Oops..', 'error', 'Please Enter Valid Captcha.', 'LCaptcha', ''); return false;
+                }
+                if (parseInt($("#username").val().trim()) == false) {
+                    Mode = "New Admission";
+                }
+                $("#MyLoader").show();
+
+                var User = {
+                    Username: $("#username").val(),
+                    Password: $("#userpass").val(),
+                    LoginType: "Login",
+                    Image: $("#LCaptcha").val(),
+                    UserType: Mode
+                };
+                var Path = "/Login/NewLoginFunction";
+                var getData = myService.UserLogin(User, Path);
+                getData.then(function (d) {
+                    if (d.data.toString().indexOf("Ok:") != -1) {
+                        //$("#MyLoader").hide();
+                        //CallSwal('User Verified', 'success', 'Click Ok To Continue', '', d.data.toString().replace("Ok:", "")); return false;
+
+                        $("#username").val('');
+                        $("#userpass").val('');
+                        $("#LCaptcha").val('');
+
+                        $("#username_f").val('');
+                        $("#userpass_f").val('');
+                        $("#FCaptcha").val('');
+
+                        window.location = d.data.toString().replace("Ok:", "");
+                    }
+                    else {
+                        $("#MyLoader").hide();
+                        RefreshCaptcha('L');
+                        CallSwal('Oops..', 'error', d.data, 'LCaptcha', ''); return false;
+                    }
+                });
+            }
+
+            $scope.ValidateRecovery= function () {
+                var Mode = "Regular Student";
+                if ($("#username_f").val().trim().length < 9) {
+                    CallSwal('Oops..', 'error', 'Please Enter Your Roll No / Registration No.', 'username_f', ''); return false;
+                }
+                if ($("#userpass_f").val().trim().length <= 0) {
+                    CallSwal('Oops..', 'error', 'Please Enter Your Registered Email-ID', 'userpass_f', ''); return false;
+                }
+                else {
+                    if (isEmailAddress($("#userpass_f").val()) == false) {
+                        CallSwal('Oops..', 'error', 'Please Enter Valid Email-ID', 'userpass_f', ''); return false;
+                    }
+                }
+
+                if ($("#FCaptcha").val().length < 4) {
+                    CallSwal('Oops..', 'error', 'Please Enter Valid Captcha.', 'FCaptcha', ''); return false;
+                }
+                if (parseInt($("#username_f").val().trim()) == false) {
+                    Mode = "New Admission";
+                }
+                $("#MyLoader").show();
+
+                var User = {
+                    Username: $("#username_f").val(),
+                    Password: $("#userpass_f").val(),
+                    LoginType: "Recover",
+                    Image: $("#FCaptcha").val(),
+                    UserType: Mode
+                };
+                var Path = "/Login/NewRecoverFunction";
+                var getData = myService.UserLogin(User, Path);
+                getData.then(function (d) {
+                    if (d.data.toString().indexOf("Success") != -1) {
+                        $("#MyLoader").hide();
+                        RefreshCaptcha('F');
+
+                        $("#username_f").val('');
+                        $("#userpass_f").val('');
+                        $("#FCaptcha").val('');
+
+                        $("#username").val('');
+                        $("#userpass").val('');
+                        $("#LCaptcha").val('');
+
+                        $("#trantologin").click();
+
+                        CallSwal('Success', 'success', 'Dear Student, Your Crecdentials Has Been Successfully Emailed To You.', 'username', ''); return false;
+                    }
+                    else {
+                        $("#MyLoader").hide();
+                        RefreshCaptcha('F');
+                        CallSwal('Oops..', 'error', d.data, 'FCaptcha', ''); return false;
+                    }
+                });
+            }
+        });
+
+        $('.alphaonly').bind('keyup blur', function () {
+            var node = $(this);
+            node.val(node.val().replace(/[^A-Za-z_\s.]/, ''));
+        });
+
+        $('.alphanumberonly').bind('keyup blur', function () {
+            var node = $(this);
+            node.val(node.val().replace(/[^A-Za-z0-9]/, ''));
+        });
+
+        $('.alphaonlyusername').bind('keyup blur', function () {
+            var node = $(this);
+            node.val(node.val().replace(/[^glaGLAOoeE0-9-]/, ''));
+        });
+
+        $('.emailname').bind('keyup blur', function () {
+            var node = $(this);
+            node.val(node.val().replace(/[^A-Za-z0-9._@-]/, ''));
+        });
+
+        // allow only  Number 0 to 9
+        $('.numberonly').bind('keyup blur', function () {
+            var node = $(this);
+            node.val(node.val().replace(/[^0-9]/, ''));
+        });
+        $('.numberonlywithdot').bind('keyup blur', function () {
+            var node = $(this);
+            node.val(node.val().replace(/[^0-9.]/, ''));
+        });
+        function RefreshCaptcha(Mode) {
+            if (Mode == "N" || Mode == "L" || Mode == "F") {
+                document.getElementById(Mode + "Captcha").value = "";
+                document.getElementById(Mode + "ImgCaptcha").src = "/Login/CreateCaptchaImage?Mode=" + Mode + "&New=" + Math.floor(Math.random() * Math.floor(1000));
+            }
+        }
+
+        function formatDate(date) {
+            var year = date.getFullYear().toString();
+            var month = (date.getMonth() + 101).toString().substring(1);
+            var day = (date.getDate() + 100).toString().substring(1);
+            return year + "-" + month + "-" + day;
+        }
+
+        function isEmailAddress(str) {
+            var pattern = /^\w+([\.-]?\w+)*@[a-zA-Z0-9-._]+([\.-]?\w+)*(\.\w{2,10})+$/;
+            return pattern.test(str);  // returns a boolean
+        }
+
+        function CallSwal(Head, Type, Msg, FocusTo, RedirectTo) {
+            swal({
+                title : Head,
+                icon: Type,
+                text: Msg,
+                focusConfirm: true
+            }).then(result => {
+                if (FocusTo != '') {
+                    $("#" + FocusTo).focus();
+                }
+                else {
+                    if (RedirectTo != '') {
+                        window.location = RedirectTo;
+                    }
+                }
+            });
+        }
+
+        $(function () {
+            setInterval(KeepSessionAlive, 60000);
+        });
+        function KeepSessionAlive() {
+            $.post("/KeepSessionAlive.ashx", null, function () {
+            });
+        }
+
+  </script> 
+  <script src="/Scripts/MyAngularScript/MyService.js"></script>
+  <style>
+
+        .for-captcha {
+            border: 1px solid #cecece;
+            height: 45px;
+            background: #fff;
+            border-radius: 2px;
+            margin-bottom: 4px;
+            padding: 6px 0px;
+            box-sizing: border-box;
+            font-size: 14px;
+            color: #000;
+            text-align: center;
+        }
+  </style>
+</body>
+</html>
